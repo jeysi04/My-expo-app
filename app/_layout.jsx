@@ -8,8 +8,8 @@ export default function Layout() {
   return (
     <Drawer screenOptions={{ 
         headerStyle: { 
-        backgroundColor: '#A14FE1',
-        height: 75
+        backgroundColor: '#000000ff',
+        height: 75,
         }, 
         headerTintColor: '#ffffffff',
         
@@ -19,13 +19,13 @@ export default function Layout() {
           letterSpacing: 0.5,    // optional
           color: '#ffffffff',    // optional override
           textTransform: 'capitalize',
-          width: '100%'
+          width: '100%',
         },
 
         drawerLabelStyle: {
             fontSize: 15,
             fontWeight: '500',
-            color: '#3b0336ff',
+            color: '#000000ff',
             textTransform: 'capitalize', // or 'uppercase'
             },
 

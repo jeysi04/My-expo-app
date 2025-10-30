@@ -29,20 +29,20 @@ export default function RockPaperScissorScreen() {
         <View style={styles.winner}>
           
           <View styles={styles.nameComp}> 
-            <Text style={[styles.bold]}>Computer</Text> 
+            <Text style={[styles.bold, {color: '#F8F8FF'}]}>Computer</Text> 
           </View>
           
           <View style={styles.messageComp}> 
-            <Text> I pick {compMove}. </Text> 
+            <Text style={{color: '#4A4A4A'}}> I pick {compMove}. </Text> 
           </View>
 
         <View style={styles.userMContainer}> 
           <View style={styles.nameUser}> 
-            <Text style={[styles.bold]}>User</Text> 
+            <Text style={[styles.bold,  {color: '#F8F8FF'}]}>User</Text> 
           </View>
 
           <View style={styles.messageUser}> 
-            <Text> I pick {choice}. </Text> 
+            <Text style={{color: '#4A4A4A'}}> I pick {choice}. </Text> 
           </View>
         </View>
 
@@ -126,8 +126,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#F8F8FF',
   },
+
   title: {
     fontSize: 20,
     fontWeight: 'bold',
@@ -144,17 +145,12 @@ const styles = StyleSheet.create({
   button: {
     height: 70,
     width: '95%',
-    backgroundColor: '#e192fbff',
+    backgroundColor: '#C7B8EA',
     border: 'none',
     borderRadius: 10,
     font: 'Garamond',
     fontSize: 40,
     fontWeight: 'bold',
-    shadowColor: 'rgb(211, 220, 178)',
-    shadowOffset: { width: 1, height: 1},
-    shadowOpacity: 1,
-    shadowRadius: 0,
-    elevation: 8,
     marginTop: 20,
     justifyContent: 'center',
     alignItems: 'center',
@@ -165,16 +161,17 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily: 'Poppins-Medium',
     fontWeight: 'bold',
-    backgroundColor: '#e6ddd6',
+    backgroundColor: '#5E4B8B',
     height: 365,
     width: '90%',
     borderRadius: 20,
     padding: 20,
-    paddingTop: 25
+    paddingTop: 25,
+    marginTop: -70
   },
 
   titleButton: { 
-    color: '#ffffffff',
+    color: '#F8F8FF',
     fontFamily: 'Poppins-Bold',
     fontSize: 24,
     fontWeight: 'bold',
@@ -190,28 +187,30 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'flex-start', 
     justifyContent: 'center',
-    marginTop: 60
+    marginTop: 60,
+    color: '#F8F8FF'
   },
 
   nameUser: {
     marginTop: 50,
-    marginBottom: 5
+    marginBottom: 5,
+
   },
 
   messageComp: {
     height: 60,
     width: 200,
     marginTop: 5,
-    backgroundColor: '#ffffff',
-    borderRadius: 10,
+    backgroundColor: '#F8F8FF',
+    borderRadius: 20,
     padding: 20
   },
 
   messageUser: {
     height: 60,
     width: 200,
-    backgroundColor: '#ffffff',
-    borderRadius: 10,
+    backgroundColor: '#F8F8FF',
+    borderRadius: 20,
     padding: 20
   },
 
@@ -222,9 +221,13 @@ const styles = StyleSheet.create({
   resultBox: {
     height: 60,
     width: '100%',
-    backgroundColor: '#ffffffff',
+    backgroundColor: '#F8F8FF',
     borderRadius: 20,
     padding: 20,
     marginTop: 30
+  },
+
+  result: {
+    color: '#4A4A4A'
   }
 });
